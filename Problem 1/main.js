@@ -12,7 +12,11 @@ function nextSmaller(num) {
                 j--;
             }
             [numStr[i], numStr[j]] = [numStr[j], numStr[i]];
-            return parseInt(numStr.slice(0, i + 1).concat(numStr.slice(i + 1).reverse()).join(""));
+
+            let leftNum = numStr.slice(0, i + 1);
+            let rightNum = numStr.slice(i + 1).reverse();
+
+            return parseInt(leftNum.concat(rightNum).join(""));
         } else {
             return -1; // Returns this if no smaller number can be formed
         }
