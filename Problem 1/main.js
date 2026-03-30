@@ -25,3 +25,5 @@ function largestOfThree(x, y, z) {
 }
 
 console.log(largestOfThree(20, 30, 40));
+console.log(largestOfThree(20, 50, 40));
+console.log(largestOfThree(100, 30, 40));
