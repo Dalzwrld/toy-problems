@@ -11,6 +11,7 @@ function nextSmaller(num) {
             while (numStr[j] >= numStr[i]) {
                 j--;
             }
+            
             [numStr[i], numStr[j]] = [numStr[j], numStr[i]];
 
             let leftNum = numStr.slice(0, i + 1);
