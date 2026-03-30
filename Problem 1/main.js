@@ -15,7 +15,7 @@ function nextSmaller(num) {
             return parseInt(numStr.slice(0, i + 1).concat(numStr.slice(i + 1).reverse()).join(""));
         }
     }
-    return -1; // Return -1 if no smaller number can be formed
+    return -1; // Returns this if no smaller number can be formed
 }
 
 console.log(nextSmaller(123));
