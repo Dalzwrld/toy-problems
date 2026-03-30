@@ -1,6 +1,6 @@
 // 30/03/2026
 
-// 1. A function that takes a positive integer and returns the next smaller positive integer containing the same digits.
+// 1. A function that takes a positive integer and returns the immediate smaller positive integer containing the same digits.
 
 function nextSmaller(num) {
     let numStr = num.toString().split("");
@@ -13,9 +13,10 @@ function nextSmaller(num) {
             }
             [numStr[i], numStr[j]] = [numStr[j], numStr[i]];
             return parseInt(numStr.slice(0, i + 1).concat(numStr.slice(i + 1).reverse()).join(""));
+        } else {
+            return -1; // Returns this if no smaller number can be formed
         }
     }
-    return -1; // Returns this if no smaller number can be formed
 }
 
 console.log(nextSmaller(123));
