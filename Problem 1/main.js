@@ -49,6 +49,7 @@ console.log(nextSmaller(2071));
 // 2. A FUNCTION THAT RETURNS THE LARGEST OF THREE GIVEN VARIABLES.
 
 function largestOfThree(x, y, z) {
+    // Compare the three variables to one another and return the largest one
     if (x > y && x > z) {
         return `${x} is the largest`;
     } else if (y > x && y > z) {
