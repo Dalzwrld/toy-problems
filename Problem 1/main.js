@@ -23,11 +23,13 @@ function nextSmaller(num) {
     let leftNum = numStr.slice(0, i + 1);
     let rightNum = numStr.slice(i + 1).reverse();
 
-    if (leftNum[0] === "0") {
+    let result = leftNum.concat(rightNum).join("");
+
+    if (result[0] === "0") {
         return -1;
     }
 
-    return parseInt(leftNum.concat(rightNum).join(""));
+    return parseInt(result);
 
 
 }
