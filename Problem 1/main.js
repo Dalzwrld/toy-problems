@@ -1,6 +1,6 @@
 // 30/03/2026
 
-// 1. A function that takes a positive integer and returns the immediate smaller positive integer containing the same digits.
+// 1. A FUNCTION THAT TAKES A POSITIVE INTEGER AND RETURNS THE IMMEDIATE SMALLER POSITIVE INTEGER CONTAINING THE SAME DIGITS.
 
 function nextSmaller(num) {
     // Convert the number to an array of its digits
@@ -46,7 +46,7 @@ console.log(nextSmaller(531));
 console.log(nextSmaller(2071));
 
 
-// 2. A function that returns the largest of three given variables.
+// 2. A FUNCTION THAT RETURNS THE LARGEST OF THREE GIVEN VARIABLES.
 
 function largestOfThree(x, y, z) {
     if (x > y && x > z) {
