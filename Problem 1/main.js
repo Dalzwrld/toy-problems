@@ -5,23 +5,31 @@
 function nextSmaller(num) {
     let numStr = num.toString().split("");
 
-    for (let i = numStr.length - 2; i >= 0; i--) {
-        if (numStr[i] > numStr[i + 1]) {
-            let j = numStr.length - 1;
-            while (numStr[j] >= numStr[i]) {
-                j--;
-            }
-            
-            [numStr[i], numStr[j]] = [numStr[j], numStr[i]];
-
-            let leftNum = numStr.slice(0, i + 1);
-            let rightNum = numStr.slice(i + 1).reverse();
-
-            return parseInt(leftNum.concat(rightNum).join(""));
-        } else {
-            return -1; // Returns this if no smaller number can be formed
-        }
+    let i = numStr.length - 2;
+    while (i >= 0 && numStr[i] <= numStr[i + 1]) {
+        i--;
     }
+    if (i < 0) {
+        return -1;
+    }
+
+    let j = numStr.length - 1;
+    while (numStr[j] >= numStr[i]) {
+        j--;
+    }
+            
+    [numStr[i], numStr[j]] = [numStr[j], numStr[i]];
+
+    let leftNum = numStr.slice(0, i + 1);
+    let rightNum = numStr.slice(i + 1).reverse();
+
+    if (leftNum[0] === "0") {
+        return -1;
+    }
+
+    return parseInt(leftNum.concat(rightNum).join(""));
+
+
 }
 
 console.log(nextSmaller(123));
