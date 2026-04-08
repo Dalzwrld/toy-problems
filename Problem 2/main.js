@@ -5,5 +5,5 @@
 const arr = [3, 7, 2, 9, 5];
 
 function largestElement(num) {
-    let numStr = num.toString().split();
+    let numStr = num.toString().split("");
 }
