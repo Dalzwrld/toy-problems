@@ -15,12 +15,14 @@ console.log(largestNumber[0]);
 
 const array = [1, 2, 3, 4, 5];
 
-function sortedArray(array) {
-    for (let i = 0; i < array.length -1; i++) {
-        if (array[i] > array[i + 1]) {
+let numStr = array.toString();
+
+function sortedArray() {
+    for (let i = 0; i < numStr.length -1; i++) {
+        if (numStr[i] > numStr[i + 1]) {
             return false;
         }
-    } return true;
+    }
 }
 
-console.log();
+console.log(sortedArray());
