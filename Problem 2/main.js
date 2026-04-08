@@ -4,7 +4,11 @@
 
 const numbers = [3, 7, 2, 9, 5];
 
-const [num1, num2, num3, num4, num5] = arr;
+const [num1, num2, num3, num4, num5] = numbers;
 
 function largestElement(num) {
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        
+    }
 }
