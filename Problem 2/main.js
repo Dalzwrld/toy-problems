@@ -4,11 +4,8 @@
 
 const numbers = [3, 7, 2, 9, 5];
 
-const [num1, num2, num3, num4, num5] = numbers;
+const max = Math.max(...numbers);
 
-function largestElement(num) {
-    for (let i = 0; i < numbers.length; i++) {
-        const element = numbers[i];
-        
-    }
-}
+const largestNumber = numbers.filter(num => num === max);
+
+console.log(largestNumber[0]);
