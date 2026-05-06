@@ -13,13 +13,13 @@ console.log(largestNumber[0]);
 
 // 2. GIVEN AN ARRAY, CHECK WHETHER IT'S SORTED IN A NON-DECREASING MANNER
 
-const array = [1, 2, 3, 4, 5];
-
-let numStr = array.toString();
+const array = [5, 4, 3, 2, 1];
 
 function sortedArray() {
-    for (let i = 0; i < numStr.length -1; i++) {
-        if (numStr[i] > numStr[i + 1]) {
+    for (let i = 0; i < array.length -1; i++) {
+        if (array[i] > array[i + 1]) {
+            return true;
+        } else {
             return false;
         }
     }
